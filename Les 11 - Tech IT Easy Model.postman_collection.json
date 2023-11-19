@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "b8de2250-c286-4ca9-be56-f47c2b71faa3",
+		"name": "Les 11 - Tech IT Easy Model",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24308684"
+	},
+	"item": [
+		{
+			"name": "Show all televisions w/ brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/televisions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"televisions"
+					],
+					"query": [
+						{
+							"key": "brand",
+							"value": "philips",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show a television with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/televisions/1005",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"televisions",
+						"1005"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add  television",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"OLED55C16LA\",\r\n    \"brand\": \"LG\",\r\n    \"name\": \"LG OLED55C16LA\",\r\n    \"price\": 989.0,\r\n    \"availableSize\": \"XL\",\r\n    \"refreshRate\": 100.0,\r\n    \"screenType\": \"OLED\",\r\n    \"screenQuality\": \"HDREADY\",\r\n    \"smartTv\": true,\r\n    \"wifi\": true,\r\n    \"voiceControl\": true,\r\n    \"hdr\": true,\r\n    \"bluetooth\": true,\r\n    \"ambiLight\": false,\r\n    \"originalStock\": \"2023-09-01\",\r\n    \"sold\": \"2023-09-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/televisions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"televisions"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete television",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/televisions/1001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"televisions",
+						"1001"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a television",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"OLED55C16LA\",\r\n    \"brand\": \"LG\",\r\n    \"name\": \"LG OLED55C16LA\",\r\n    \"price\": 989.0,\r\n    \"availableSize\": \"XL\",\r\n    \"refreshRate\": 100.0,\r\n    \"screenType\": \"OLED\",\r\n    \"screenQuality\": \"HDREADY\",\r\n    \"smartTv\": true,\r\n    \"wifi\": true,\r\n    \"voiceControl\": true,\r\n    \"hdr\": true,\r\n    \"bluetooth\": true,\r\n    \"ambiLight\": false,\r\n    \"originalStock\": \"2023-09-01\",\r\n    \"sold\": \"2023-09-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/televisions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"televisions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gedeeltelijk bijewerken televisie",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"4KTVQLEDZZZZZZZ\",\r\n    \"brand\": \"Samsung Gen Z\",\r\n    \"name\": \"HD smart TV\",\r\n    \"price\": 1859.0,\r\n    \"availableSize\": 32.0,\r\n    \"refreshRate\": 100.0,\r\n    \"screenType\": \"LED\",\r\n    \"screenQuality\": \"HD ready\",\r\n    \"smartTv\": true,\r\n    \"wifi\": true,\r\n    \"voiceControl\": false,\r\n    \"hdr\": false,\r\n    \"bluetooth\": false,\r\n    \"ambiLight\": false,\r\n    \"originalStock\": 235885,\r\n    \"sold\": 45896\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/televisions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"televisions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
